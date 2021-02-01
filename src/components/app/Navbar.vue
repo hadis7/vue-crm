@@ -46,11 +46,7 @@ export default {
     interval: null,
     dropdown: null,
   }),
-  methods: {
-logout() {
-  this.$router.push('login?message=logout')
-}
-  },
+  
   mounted() {
    this.interval = setInterval(() => {
       this.date = new Date()
@@ -64,6 +60,13 @@ logout() {
     if (this.dropdown && this.dropdown.destroy) {
       this.dropdown.destroy()
     }
-  }
+  },
+
+  methods: {
+    async logout() {
+      await this.$store.dispatch('logout');
+      this.$router.push('login?message=logout');
+    }
+  },
 }
 </script>
