@@ -25,12 +25,13 @@ export default {
        }
     },
     getUid() {
-      const user = firebase.auth().currentUser
-      return user ? user.uid : nell
+      const user = firebase.auth().currentUser;
+      return user ? user.uid : nell;
     },
 
-    async logout() {
-      await firebase.auth().signOut()
+    async logout({commit}) {
+      await firebase.auth().signOut();
+      commit('clearInfo');
     }
   }
 }
