@@ -29,7 +29,7 @@
 
 <script>
 import {mapGetters} from 'vuex'
-import currencyFilter from '@/filter/currency.filter'
+import currencyFilter from '@/filters/currency.filter'
 export default {
   name: 'planning',
   data: () => ({

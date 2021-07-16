@@ -3,11 +3,11 @@ import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 import store from './store';
-import dateFilter from '@/filter/date.filter';
-import currencyFilter from '@/filter/currency.filter';
+import dateFilter from '@/filters/date.filter';
+import currencyFilter from '@/filters/currency.filter';
 import Vuelidate from 'vuelidate';
-import tooltipDirective from '@/directives/tooltip.directive'
-import messagePlugin from '@/utils/message.plugin.js'
+import tooltipDirective from '@/directives/tooltip.directive';
+import messagePlugin from '@/utils/message.plugin.js';
 import Loader from '@/components/app/Loader.vue';
 import 'materialize-css/dist/js/materialize.min';
 
