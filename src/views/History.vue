@@ -32,7 +32,8 @@ export default {
     records: [],
     categories: [],
   }),
-  async mounted() {
+  async mounted() { 
+    
     // this.records = await this.$store.dispatch('fetchRecords')
     const records = await this.$store.dispatch('fetchRecords')
     this.categoires = await this.$store.dispatch('fetchCategories')
