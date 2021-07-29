@@ -4,7 +4,7 @@
   <div class="app-main-layout" v-else>
     <Navbar @click="isOpen = !isOpen" />
 
-    <Sidebar v-model="isOpen" />
+    <Sidebar v-model="isOpen" :key="locale"/>
     <main class="app-content" :class="{full: !isOpen}">
       <div class="app-page">
         <router-view />
@@ -44,9 +44,15 @@ export default {
   computed: {
     error() {
       return this.$store.getters.error
+    },
+    locale() {
+      return this.$store.getters.info.locale
     }
   },
-  watch: {
+  watch: { 
+    // locale() {
+    //   console.log('Locale changed')
+    // },
     error(fbError) {
       this.$error(messages[fbError.code] || "Что-то пошло не так")
     }
