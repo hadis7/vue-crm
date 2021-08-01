@@ -40,7 +40,7 @@
     <div class="card-action">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
-          {{'Login'|localize}}
+          {{'Login_Title'|localize}}
           <i class="material-icons right">send</i>
         </button>
       </div>
@@ -60,6 +60,11 @@ import localizeFilter from '@/filters/localize.filter'
 
 export default {
   name: 'login',
+  metaInfo() {
+    return {
+      title: this.$title('Login_Title')
+    }
+  },
   data: () => ({
     email: '',
     password: ''

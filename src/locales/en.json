@@ -52,7 +52,7 @@
   "Message_EmailValid": "Enter valid email",
   "Password": "Password",
   "Message_EnterPassword": "Enter password",
-  "Login": "Login",
+  "Login_Title": "Login",
   "NoAccount": "Has no account?",
   "HasAccount": "Has account?",
   "Register": "Register",

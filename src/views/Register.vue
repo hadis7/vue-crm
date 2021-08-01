@@ -72,7 +72,7 @@
 
       <p class="center">
         {{'HasAccount'|localize}}
-        <router-link to="/login">{{'Login'|localize}}</router-link>
+        <router-link to="/login">{{'Login_Title'|localize}}</router-link>
       </p>
     </div>
   </form>
@@ -83,6 +83,11 @@ import {email, required, minLength} from 'vuelidate/lib/validators'
 
 export default {
   name: 'register',
+  metaInfo() {
+    return {
+      title: this.$title('Register')
+    }
+  },
   data: () => ({
     email: '',
     password: '',

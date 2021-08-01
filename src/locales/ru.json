@@ -53,7 +53,7 @@
   "Message_EmailValid": "Введите корретный Email",
   "Password": "Пароль",
   "Message_EnterPassword": "Введите пароль",
-  "Login": "Войти",
+  "Login_Title": "Войти",
   "NoAccount": "Нет аккаунта?",
   "HasAccount": "Уже есть аккаунт?",
   "Register": "Зарегистрироваться",
